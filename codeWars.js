@@ -34,3 +34,33 @@ let max = function (list) {
     list.sort((a, b) => b - a)
     return list[0];
 }
+
+
+// Complete the function that takes a non-negative integer n as input, and returns a list 
+// of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
+function powersOfTwo(n) {
+    let degree = []
+    for (let i = 0; i < n; i++) {
+        degree.push(Math.pow(2, i))
+    }
+    return degree
+}
+console.log(powersOfTwo(5))
+
+
+
+// Create a method to see whether the string is ALL CAPS.
+String.prototype.isUpperCase = function () {
+    return this == this.toUpperCase()
+}
+
+
+
+
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+function squareSum(numbers) {
+    let square = numbers.reduce((sum, current) =>
+        sum + current ** 2, 0)
+    return square
+}
+console.log(squareSum([2, 2, 2]))
