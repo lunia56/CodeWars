@@ -64,3 +64,15 @@ function squareSum(numbers) {
     return square
 }
 console.log(squareSum([2, 2, 2]))
+
+
+
+// Taking into account that an average crew member on board adds 1.5 units to the draft, a ship that has a draft of more than 20 without crew is considered worthy to loot. Any ship weighing that much must have a lot of booty!
+
+
+function Ship(draft, crew) {
+    this.draft = draft;
+    this.crew = crew;
+    this.isWorthIt = function () { return this.draft - (this.crew * 1.5) > 20 }
+}
+var titanic = new Ship(15, 10);
