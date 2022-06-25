@@ -76,3 +76,17 @@ function Ship(draft, crew) {
     this.isWorthIt = function () { return this.draft - (this.crew * 1.5) > 20 }
 }
 var titanic = new Ship(15, 10);
+titanic.isWorthIt() // return false
+
+
+
+
+// Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+
+function fakeBin(x) {
+    let myArray = Array.from(x)
+    return myArray.map((item) => (Number(item) >= 5) ? 1 : 0).join("");
+}
+
+console.log(fakeBin("123445453498579387"))
