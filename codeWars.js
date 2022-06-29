@@ -161,3 +161,25 @@ function expressionMatter(a, b, c) {
     return Math.max(...results);
 }
 console.log(expressionMatter(10, 5, 6))
+
+
+
+
+
+
+
+// найдите площадь квадрата. дана длина окружности внутри квадрата
+
+
+function squareArea(A) {
+
+    return Number(Math.pow((A * 4) / (Math.PI * 2), 2).toFixed(2));
+};
+// Math.pow(2,3)=8 - возводин первый аргумент в степень второго аргумента
+// toFixed(2)- округляет дробное число до 2х знаков после запятой
+
+
+
+
+// Учитывая число n, вернуть количество положительных нечетных чисел меньше n, ЛЕГКО!
+const oddCount = n => Math.floor(n / 2);
