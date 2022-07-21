@@ -214,3 +214,16 @@ function span(arr, predicate) {
     }
     return [arr.slice(0, i), arr.slice(i)]
 }
+
+
+// Вы получаете массив чисел, возвращаете сумму всех положительных.
+function positiveSum(arr) {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {    // setup loop to go through array of given length
+        if (arr[i] > 0) {                   // if arr[i] is greater than zero
+            total += arr[i];                  // add arr[i] to total
+        }
+    }
+    return total;                         // return total
+}
+console.log(positiveSum(arr))
